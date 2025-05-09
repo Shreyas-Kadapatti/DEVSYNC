@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NewsNexus - Real-Time News</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background-color: #1e293b;
+      padding: 1rem;
+      color: white;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav {
+      background: #334155;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #38bdf8;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-body h3 {
+      margin: 0;
+      font-size: 1.2rem;
+    }
+    .card-body p {
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+      color: #555;
+    }
+    footer {
+      background-color: #1e293b;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>NewsNexus</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Trending</a>
+  <a href="#">World</a>
+  <a href="#">Technology</a>
+  <a href="#">Sports</a>
+  <a href="#">Business</a>
+</nav>
+
+<main class="container">
+  <div class="card">
+    <img src="https://marketplace.canva.com/EAGD3XkUBK0/1/0/1600w/canva-red-and-white-general-news-breaking-news-video-8HCnEsJgmXA.jpg" alt="Breaking News">
+    <div class="card-body">
+      <h3>Breaking: Global Event Unfolds</h3>
+      <p>Massive developments shake the world stage as leaders react to unfolding events.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDI4fHx0ZWNobm9sb2d5fGVufDB8fHx8MTY5MDcxMTIxOA&ixlib=rb-4.0.3&q=80&w=600" alt="Technology News">
+    <div class="card-body">
+      <h3>Tech: AI Innovations Accelerate</h3>
+      <p>Artificial intelligence makes new waves, breaking previous limitations with cutting-edge models.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1521790945508-bf2a36314e85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDU4fHxidXNpbmVzc3xlbnwwfHx8fDE2OTA3MTEyNDA&ixlib=rb-4.0.3&q=80&w=600" alt="Business News">
+    <div class="card-body">
+      <h3>Markets: Big Gains Recorded</h3>
+      <p>Stock markets hit all-time highs after surprising economic reports revealed strong growth.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://media.istockphoto.com/id/114120315/video/sports-news-broadcast-graphics-title.jpg?s=640x640&k=20&c=oOlUXmlkyEzqaKGX7FIW3q3uQf0GAlES-wuM3hibnwY=" alt="Sports News">
+    <div class="card-body">
+      <h3>Sports: Record-Breaking Game</h3>
+      <p>Athletes smash records as fans celebrate a historic performance in the championship finale.</p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2025 NewsNexus | All Rights Reserved
+</footer>
+
+</body>
+</html>
